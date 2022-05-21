@@ -1,0 +1,56 @@
+.form {
+    width: 50%;
+    background-color: rgb(172, 31, 31);
+    color: rgb(245, 245, 245);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-field {
+
+    margin: 1rem 0;
+    display: flex;
+
+}
+
+.form-field label {
+   flex-basis: 20%;
+
+}
+
+
+.form-field textarea {
+    flex-basis: 80%;
+    resize: none;
+    border: none;
+    border-radius: 00.6rem;
+    padding: 0.2rem;
+}
+
+
+
+.form-field input {
+    flex-basis: 80%;
+
+}
+
+.form button:hover {
+
+   background-color: orange;
+
+}
+
+.form button {
+
+    /* color: rgb(215, 233, 16);
+    background-color: rgb(54, 44, 44) ; */
+  
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+
+}
