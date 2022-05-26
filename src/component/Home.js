@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from "uuid"
 
 
 
-export const Home = () => {
+const Home = () => {
 
   const [todos, setTodos] = useState([]);
   const handleAddTodo = (todo) => {
@@ -53,3 +53,5 @@ export const Home = () => {
     </div>
   )
 }
+
+export  default Home ;
