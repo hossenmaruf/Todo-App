@@ -10,38 +10,37 @@ const useFatch = (url) => {
     useEffect(() => {
 
         fetch(url)
-        
-        .then((res) => {
-            if (!res.ok){
-                throw Error ("fATCHING IS NOT SUCCESSFULL")
-            } else 
-            { 
-                return res.json() ;
-                
-            }
-            
-         } )
+
+            .then((res) => {
+                if (!res.ok) {
+                    throw Error("fATCHING IS NOT SUCCESSFULL")
+                } else {
+                    return res.json();
+
+                }
+
+            })
 
             .then((data) => {
                 setData(data);
                 isSetLoading(false);
-                setError(null) ;
+                setError(null);
 
             })
-            .catch ((error)  => {
-                setError(error.message) ;
-                isSetLoading(false) ;
+            .catch((error) => {
+                setError(error.message);
+                isSetLoading(false);
             }
             )
 
 
 
-    }, [url]) ;
+    }, [url]);
 
 
 
 
-     return  {data , isLoading , error}
+    return { data, isLoading, error }
 
 
 

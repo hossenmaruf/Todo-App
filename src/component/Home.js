@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import  Todos  from './Todos'
+import Todos from './Todos'
 import style from './Home.module.css'
 
 import NewTodo from './NewTodo'
@@ -14,28 +14,28 @@ const Home = () => {
   const handleAddTodo = (todo) => {
 
     setTodos((prevTodos) => {
-      return [...prevTodos, { id : uuidv4() , todo }]
+      return [...prevTodos, { id: uuidv4(), todo }]
     })
 
     console.log(todo);
 
 
   }
-  
-
-   const handleRemoveTodo = (id) => {
-
-     setTodos( (prevTodos) => {
-
-     const filterTodos = prevTodos.filter((todo) => todo.id !== id) ;
-      return filterTodos ;
-
-     }
-
-     ) ;
 
 
-   } ;
+  const handleRemoveTodo = (id) => {
+
+    setTodos((prevTodos) => {
+
+      const filterTodos = prevTodos.filter((todo) => todo.id !== id);
+      return filterTodos;
+
+    }
+
+    );
+
+
+  };
 
 
   return (
@@ -45,7 +45,7 @@ const Home = () => {
 
       <NewTodo onAddTodo={handleAddTodo} />
 
-      <Todos todos={todos} onRemoveTodo = {handleRemoveTodo} />
+      <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />
 
 
 
@@ -54,4 +54,4 @@ const Home = () => {
   )
 }
 
-export  default Home ;
+export default Home;

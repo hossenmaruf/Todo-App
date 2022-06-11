@@ -9,7 +9,7 @@ const iserror = <p>fucking error </p>
 
 export const DataFacting = () => {
 
-   const{data , isLoading , error} = useFatch('https://jsonplaceholder.typicode.com/todos')
+    const { data, isLoading, error } = useFatch('https://jsonplaceholder.typicode.com/todos')
 
     const todosElement = data &&
         data.map((todo) => {
@@ -22,7 +22,7 @@ export const DataFacting = () => {
 
             <h1>  Todos   </h1>
 
-            { error && iserror }
+            {error && iserror}
 
             {isLoading && loadingMessage}
 

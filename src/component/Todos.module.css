@@ -1,12 +1,12 @@
 .todos {
 
-   width: 50%;
-   background-color: rgba(65, 15, 15, 0.453);
-     color: rgb(244, 226, 226);
-     padding: 0.7rem;
-     border-radius: 0.6rem;
-      overflow: scroll;
-        height: 60vh;  
+  width: 50%;
+  background-color: rgba(65, 15, 15, 0.453);
+  color: rgb(244, 226, 226);
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  overflow: scroll;
+  height: 60vh;
 
 
 

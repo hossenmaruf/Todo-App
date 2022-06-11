@@ -56,7 +56,7 @@ const NewTodo = (props) => {
 
       </div>
 
-      <button type=   'submit'  > Add Todo</button>
+      <button type='submit'  > Add Todo</button>
 
 
 
